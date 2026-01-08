@@ -1,0 +1,34 @@
+{
+  "name": "frontend-ts",
+  "version": "0.0.1",
+  "description": "frontend to password protected pastebin",
+  "homepage": "https://github.com/TES-aro/copyCrypt-frontend#readme",
+  "bugs": {
+    "url": "https://github.com/TES-aro/copyCrypt-frontend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TES-aro/copyCrypt-frontend.git"
+  },
+  "license": "GPL-3.0",
+  "author": {
+    "name": "TES-aro"
+  },
+  "type": "commonjs",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^5.9.3"
+  }
+}
