@@ -6,6 +6,7 @@ import {
 import Home from "../pages/home";
 import TestPage from "../pages/TestPage";
 import ToHome from "./ToHome"
+import Submit from "./Submit"
 
 const padding = {
 	padding : 10
@@ -24,12 +25,14 @@ function NavBar() {
    		<div >
 	    	<Link style={startPad} to="/">home</Link>
 	    	<Link style={padding} to="/test">testPage</Link>
+	    	<Link style={padding} to="/submit">submit</Link>
 	    </div>
 
 	    <div>
     		<Routes>
     			<Route path="/" element={<Home />} />
     			<Route path="/test" element={<TestPage />} />
+    			<Route path="/submit" element={<Submit />} />
     			<Route path="*" element={<ToHome />} />
     		</Routes>
     	</div>
