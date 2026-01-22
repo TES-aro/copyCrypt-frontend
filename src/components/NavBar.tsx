@@ -6,7 +6,7 @@ import {
 import Home from "../pages/home";
 import TestPage from "../pages/TestPage";
 import ToHome from "./ToHome"
-import Submit from "./Submit"
+import SubmitForm from "./SubmitForm"
 
 const padding = {
 	padding : 10
@@ -32,7 +32,7 @@ function NavBar() {
     		<Routes>
     			<Route path="/" element={<Home />} />
     			<Route path="/test" element={<TestPage />} />
-    			<Route path="/submit" element={<Submit />} />
+    			<Route path="/submit" element={<SubmitForm />} />
     			<Route path="*" element={<ToHome />} />
     		</Routes>
     	</div>

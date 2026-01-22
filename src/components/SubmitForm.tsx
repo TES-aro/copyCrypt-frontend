@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TextField } from '@mui/material'
 
-function Submit(){
+function SubmitForm(){
 	const [password, setPassword] = useState("");
 	const [content, setContent] = useState("");
 
@@ -33,4 +33,4 @@ function Submit(){
 	)
 }
 
-export default Submit;
+export default SubmitForm;
